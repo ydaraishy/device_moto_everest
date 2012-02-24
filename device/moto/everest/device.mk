@@ -17,6 +17,7 @@
 $(call inherit-product, device/moto/wingray/device_base.mk)
 
 PRODUCT_COPY_FILES += \
+    device/moto/everest/apns-conf.xml:system/etc/apns-conf.xml
     device/moto/everest/init.stingray.rc:root/init.stingray.rc 
 
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
