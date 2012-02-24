@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product-if-exists, vendor/chainsdd/everest/device-everest.mk)
+
 LOCAL_PATH := vendor/moto/everest
 
 # Non-specific motorola blobs necessary for everest hardware
@@ -37,4 +39,7 @@ PRODUCT_COPY_FILES := \
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/moto/everest/overlay device/moto/wingray/overlay vendor/moto/everest/overlay
+
+PRODUCT_PACKAGES := \
+    libpkip
 
