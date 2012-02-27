@@ -58,3 +58,20 @@ mv /tmp/res/drawable-large-nodpi/bluelinebots_small.jpg overlay/packages/apps/La
 mv /tmp/res/drawable-large-nodpi/flowerbot_small.jpg overlay/packages/apps/Launcher2/res/drawable-nodpi/
 
 rm -rf /tmp/res/
+
+cat <<EOF > overlay/packages/apps/Launcher2/res/values/extra_wallpapers.xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="extra_wallpapers" translatable="false">
+        <item>bluecrystal</item>
+        <item>bluelinebots</item>
+        <item>bots</item>
+        <item>bucky</item>
+        <item>city</item>
+        <item>flowerbot</item>
+        <item>glowy_hex</item>
+        <item>lotus</item>
+        <item>village</item>
+    </string-array>
+</resources>
+EOF
