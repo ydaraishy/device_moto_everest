@@ -21,3 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo full_everest-userdebug
+device/moto/everest/patch/patch_default.sh
