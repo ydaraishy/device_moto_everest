@@ -20,14 +20,18 @@
 #
 
 # A few more packages that aren't quite used on all builds
-#PRODUCT_PACKAGES := \
-#        HoloSpiralWallpaper \
-#        LiveWallpapersPicker \
-#        VisualizationWallpapers
+PRODUCT_PACKAGES := \
+	HoloSpiralWallpaper \
+	LiveWallpapersPicker \
+	VisualizationWallpapers
 
 # Camera
 PRODUCT_PACKAGES += \
     Camera
+
+PRODUCT_PACKAGES += \
+    libpkip
+
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
@@ -35,11 +39,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/moto/everest/device.mk)
 
-# XXX: Is this the right place for it?
-$(call inherit-product-if-exists, vendor/moto/everest/device-everest.mk)
-
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_everest
 PRODUCT_DEVICE := everest
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := MZ601
+PRODUCT_MODEL := Full Android on Everest

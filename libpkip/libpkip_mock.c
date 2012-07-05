@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
 /*
- * Copyright (C) 2007 Google Inc.
+ * Copyright (C) 2011 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,9 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
--->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- ** PrepaySetupActivity --><skip />
-    <!-- Text of prepay setup prompt page [CHAR LIMIT=NONE] -->
-    <string name="prepay_setup_message">Would you like to set up Verizon Wireless Data Service? This month to month, pay as you go service has options that fit all lifestyles. If you don’t, you can do it later from the Settings menu.</string>
-</resources>
+int PKITP_SYM_ExportProtectedKey() {
+  return 0;
+}

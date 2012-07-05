@@ -1,13 +1,17 @@
 #!/bin/sh
 
-wget https://dl.google.com/dl/android/aosp/broadcom-wingray-iml74k-2c8a74c6.tgz
-wget https://dl.google.com/dl/android/aosp/nvidia-wingray-iml74k-e5226417.tgz
+BROADCOM_DRIVER=broadcom-wingray-imm76d-ba230f0a.tgz
+NVIDIA_DRIVER=nvidia-wingray-imm76d-f793a3bf.tgz
 
-tar xzf broadcom-wingray-iml74k-2c8a74c6.tgz
-tar xzf nvidia-wingray-iml74k-e5226417.tgz
+wget https://dl.google.com/dl/android/aosp/$BROADCOM_DRIVER
+wget https://dl.google.com/dl/android/aosp/$NVIDIA_DRIVER
+
+tar xzf $BROADCOM_DRIVER
+tar xzf $NVIDIA_DRIVER
 
 mv extract-broadcom-wingray.sh ../../../
 mv extract-nvidia-wingray.sh ../../../
 
-rm broadcom-wingray-iml74k-2c8a74c6.tgz
-rm nvidia-wingray-iml74k-e5226417.tgz
+rm $BROADCOM_DRIVER
+rm $NVIDIA_DRIVER
+

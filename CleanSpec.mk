@@ -43,32 +43,8 @@
 #$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/core_intermediates)
 #$(call add-clean-step, find $(OUT_DIR) -type f -name "IGTalkSession*" -print0 | xargs -0 rm -f)
 #$(call add-clean-step, rm -rf $(PRODUCT_OUT)/data/*)
-#$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/SHARED_LIBRARIES/libaudio_intermediates)
-
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/bin/sh)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/bin/ash)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/bin/sh)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/bin/mksh)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/android-info.txt)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/build.prop)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_ril.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libril_rds.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/etc/apns-conf.xml)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/bin/base64)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/bin/extract-embedded-files)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_lte_ril.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_mm_ril.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/android-info.txt)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/etc/apns-conf.xml)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_db_ril.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_lte_ril.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_mm_ril.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_cdma_ril.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_qmi_ril.so)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/android-info.txt)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/build.prop)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmoto_lte_ril.so)
 
 # ************************************************
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST
 # ************************************************
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/root/default.prop)
