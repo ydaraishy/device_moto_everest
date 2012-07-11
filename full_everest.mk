@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     Camera
 
 PRODUCT_PACKAGES += \
-    libpkip
+    libpkip \
+    rild
 
 
 # Inherit from those products. Most specific first.
