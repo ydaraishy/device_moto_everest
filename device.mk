@@ -19,7 +19,7 @@ $(call inherit-product, device/moto/wingray/device_base.mk)
 $(call inherit-product-if-exists, vendor/moto/everest/everest-vendor.mk)
 
 PRODUCT_COPY_FILES += \
-    device/moto/everest/init.stingray.rc:root/init.stingray.rc
+    device/moto/everest/init.stingray.rc:root/init.stingray.rc \
     device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml 
 
 DEVICE_PACKAGE_OVERLAYS := \
