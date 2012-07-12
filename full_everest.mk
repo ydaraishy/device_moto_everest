@@ -33,6 +33,8 @@ PRODUCT_PACKAGES += \
     libpkip \
     rild
 
+ADDITIONAL_DEFAULT_PROPERTIES := \
+   ro.secure=0
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
