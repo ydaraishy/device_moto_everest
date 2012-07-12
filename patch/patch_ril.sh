@@ -12,4 +12,4 @@ patch $OPTS $PATCH_ROOT/../../../../frameworks/base/telephony/java/com/android/i
 
 patch $OPTS $PATCH_ROOT/../../../../frameworks/base/telephony/java/com/android/internal/telephony/gsm/GsmServiceStateTracker.java  $PATCH_ROOT/GsmServiceStateTracker.p 
 
-#patch $OPTS $PATCH_ROOT/../../../../hardware/ril/include/telephony/ril.h $PATCH_ROOT/ril.h.p
+patch $OPTS $PATCH_ROOT/../../../../hardware/ril/include/telephony/ril.h $PATCH_ROOT/ril.h.p
