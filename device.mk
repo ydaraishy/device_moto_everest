@@ -24,3 +24,7 @@ PRODUCT_COPY_FILES += \
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/moto/everest/overlay device/moto/wingray/overlay
+
+ADDITIONAL_BUILD_PROPERTIES += \
+   ro.opengles.version=131072
+
