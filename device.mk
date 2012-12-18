@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/moto/wingray/device_base.mk)
+$(call inherit-product, device/moto/everest/device_base.mk)
  
 $(call inherit-product-if-exists, vendor/moto/everest/everest-vendor.mk)
 
@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml 
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/moto/everest/overlay device/moto/wingray/overlay
+    device/moto/everest/overlay
 
 ADDITIONAL_BUILD_PROPERTIES += \
    ro.opengles.version=131072

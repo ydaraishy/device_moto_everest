@@ -26,9 +26,10 @@ then
    OPTS="-N"
 fi
 
-patch $OPTS $PATCH_ROOT/../../../../frameworks/base/telephony/java/com/android/internal/telephony/gsm/GsmDataConnectionTracker.java  $PATCH_ROOT/GsmDataConnectionTracker.p
 
-patch $OPTS $PATCH_ROOT/../../../../frameworks/base/telephony/java/com/android/internal/telephony/gsm/GsmServiceStateTracker.java  $PATCH_ROOT/GsmServiceStateTracker.p 
+patch $OPTS $PATCH_ROOT/../../../../frameworks/opt/telephony/src/java/com/android/internal/telephony/gsm/GsmDataConnectionTracker.java  $PATCH_ROOT/GsmDataConnectionTracker.p
+
+#patch $OPTS $PATCH_ROOT/../../../../frameworks/opt/telephony/src/java/com/android/internal/telephony/gsm/GsmServiceStateTracker.java  $PATCH_ROOT/GsmServiceStateTracker.p 
 
 patch $OPTS $PATCH_ROOT/../../../../hardware/ril/include/telephony/ril.h $PATCH_ROOT/ril.h.p
 

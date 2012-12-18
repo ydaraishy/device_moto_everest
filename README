@@ -1,3 +1,5 @@
 These are device files for creating a version of Android to target the 3G (UMTS) Xoom tablet, ie., the Motorola MZ601.
 
 For licensing cleanliness, proprietary binaries (vendor RIL, driver blobs, wallpapers, and/or boot animations ) are not included and must be taken from a Honeycomb device. See included scripts for this.
+
+NOTE: JZO54K (4.1.2) is the last supported build for wingray (and stingray). To build a JZO54K system you must use the "jzo54k" branch. master will now contain commits targeting future builds and is _not_ necessarily guaranteed to be stable. Branches at release points only will be created when the build is deemed sufficiently stable.

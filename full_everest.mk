@@ -45,5 +45,5 @@ $(call inherit-product, device/moto/everest/device.mk)
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_everest
 PRODUCT_DEVICE := everest
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full Android on Everest
+PRODUCT_BRAND := motorola
+PRODUCT_MODEL := Xoom
